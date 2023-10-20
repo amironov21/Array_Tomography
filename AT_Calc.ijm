@@ -50,10 +50,10 @@ ST=Dialog.getNumber();//value 7
 
 
 //Getting results
-print(
+print("Estimates for "+W+"x"+L+"mm slide with section dimensions of "+SW+"x"+SH+"um:");
 ns=1000*(L-2*Z)/SH;//number of sections in a ribbon
 NS = floor(ns);
-print("Max sections in a ribbon ="+NS);
+print("\nMax sections in a ribbon ="+NS);
 nr=1000*(W-2*Z)/(SW+(D-1));//number of ribbons
 NR = floor(nr);
 print("Max ribbons on a slide ="+NR);
