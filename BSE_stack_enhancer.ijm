@@ -178,7 +178,7 @@ for (i=0; i<list.length; i++) {
 		run("Despeckle");
 
 		if (GBlur==true)
-		run("Gaussian Blur...", "sigma=1");
+		run("Gaussian Blur...", "sigma="+Sigma);
 		
 		if (CLAHE==true)
 		run( "Enhance Local Contrast (CLAHE)", parameters);
