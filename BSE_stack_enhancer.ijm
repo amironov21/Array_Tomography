@@ -222,7 +222,7 @@ if (Dspkl==true)
 print(title, "\n- Despeckle (median filter with 3x3 pixels neighbourhood) is applied\n"); 
 
 if (GBlur==true)
-print(title, "\n- Gaussian Blur is applied with radius = "+GBlur+"\n"); 
+print(title, "\n- Gaussian Blur is applied with radius = "+Sigma+"\n"); 
 		
 if (CLAHE==true)
 print(title, "\n- CLAHE contrast filter in fast mode is applied with: \n    blocksize = "+blocksize+"\n    histogram bins = "+histogram_bins+"\n    maximum slope = "+maximum_slope+"\n"); 
