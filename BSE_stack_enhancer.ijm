@@ -58,13 +58,17 @@ sequentially (from top to bottom in the dialog window).
 If you wish to change the order of operations or add 
 your own, you will need to edit the macro code accordingly.
 
+The default sequence: Despeckle, Gaussian Blur, CLAHE, 
+Unsharp Mask, Histogram clipping, 8-bit conversion,
+Binning, Scaling.
+
 All applied modifications, along with their parameter values, 
 are recorded in a log window. This log is saved as a text 
 file together with the processed image sequence, ensuring 
 full documentation of all changes.
 
 Version: 1.0
-Date: 28/06/2026
+Date: 29/06/2026
 Author: Aleksandr Mironov 
 Еmail: amj-box@mail.ru
  */
@@ -92,7 +96,7 @@ Dialog.addToSameRow();
 Dialog.addNumber("histogram bins", 256);// number 3
 Dialog.addNumber("maximum slope", 1.3, 2, 3, "  ");// number 4
 Dialog.setInsets(15, 20, 0);
-Dialog.addCheckbox("Unsharpen Mask:", true);// check 5
+Dialog.addCheckbox("Unsharp Mask:", true);// check 5
 Dialog.addNumber("Radius", 1.0, 2, 3, "Sigma");//number 5
 Dialog.addToSameRow();
 Dialog.addNumber("Mask Weight", 0.5, 2, 3, "  ");//number 6
